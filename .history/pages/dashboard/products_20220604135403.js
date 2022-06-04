@@ -9,7 +9,7 @@ import axios from "axios";
 import useAlert from "../../hooks/useAlert";
 import Alert from "../../common/Alert";
 import Link from "next/link";
-import { PlusIcon, XCircleIcon } from "@heroicons/react/solid";
+import { XCircleIcon } from "@heroicons/react/solid";
 import { deleteProduct } from "../../services/api/products";
 
 
@@ -53,7 +53,6 @@ export default function Products() {
   return (
     <>
       <Alert alert={alert} handleClose={toggleAlert} />
-      <FormProduct setOpen={setOpen} setAlert={setAlert} />
       <div className="lg:flex lg:items-center lg:justify-between mb-4">
         <div className="flex-1 min-w-0">
           <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">List of Products</h2>
@@ -135,7 +134,7 @@ export default function Products() {
         </div>
       </div>
       <Modal open={open} setOpen={setOpen}>
-        
+        <FormProduct setOpen={setOpen} setAlert={setAlert} />
       </Modal>
     </>
   );
