@@ -1,6 +1,3 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
-
 const useFetch = (endpoint) => {
     const [data, setData] = useState([]);
   
@@ -21,4 +18,10 @@ const useFetch = (endpoint) => {
   };
   
   export default useFetch;
- 
+  © 2022 GitHub, Inc.
+  Terms
+  Privacy
+  Security
+  Status
+  Docs
+  Conta

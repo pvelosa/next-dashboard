@@ -18,7 +18,7 @@ export default function LoginPage() {
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
     
-    auth.signIn(email, password)
+    auth.signin(email, password)
     .then(() =>{
         router.push('./dashboard')
         })

@@ -9,9 +9,6 @@ import axios from "axios";
 import useAlert from "../../hooks/useAlert";
 import Alert from "../../common/Alert";
 import Link from "next/link";
-import { XCircleIcon } from "@heroicons/react/solid";
-import { deleteProduct } from "../../services/api/products";
-
 
 
 export default function Products() {
